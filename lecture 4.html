@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('mercedes-background.jpg') center/cover;
+            
+            color: #fff;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+    
+        }
+
+        section {
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        .history {
+            text-align: justify;
+        }
+
+        .model-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .model-card {
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+           
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+       
+        a {
+            color: #66cdaa;
+          
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #20b2aa;
+            
+        }
+
+        .features-list {
+            margin-top: 20px;
+        }
+
+        .contact-section {
+            margin-top: 20px;
+        }
+
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #66cdaa;
+        
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #20b2aa;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mercedes</h1>
+        <p>Excellence, Innovation, and Performance</p>
+    </header>
+
+    <section>
+        <h2>About Mercedes</h2>
+        <div class="history">
+            <p>Mercedes-Benz is a German global automobile marque and a division of Daimler AG. The brand is known for
+                luxury vehicles, buses, coaches, and trucks. The headquarters is in Stuttgart, Baden-Württemberg. The
+                name first appeared in 1926 under Daimler-Benz. In 2018, Mercedes-Benz was the largest seller of premium
+                vehicles in the world, having sold 2.31 million passenger cars.</p>
+
+            <p>The history of Mercedes-Benz goes back to the creation of the first petrol-powered car by Karl Benz in
+                1886. Since then, Mercedes-Benz has been a pioneer in automotive engineering, consistently setting new
+                standards for safety, comfort, and performance.</p>
+
+            <p>For more information, visit the official <a href="https://www.mercedes-benz.com/"
+                    target="_blank">Mercedes-Benz website</a>.</p>
+        </div>
+    </section>
+
+    <section class="model-showcase">
+        <div class="model-card">
+            <h3>Mercedes A-Class</h3>
+            <p>Compact luxury hatchback.</p>
+        </div>
+
+        <div class="model-card">
+            <h3>Mercedes C-Class</h3>
+            <p>Executive sedan and estate.</p>
+        </div>
+
+        <div class="model-card">
+            <h3>Mercedes E-Class</h3>
+            <p>Midsize luxury sedan and wagon.</p>
+        </div>
+
+        <div class="model-card">
+            <h3>Mercedes S-Class</h3>
+            <p>Flagship luxury sedan.</p>
+        </div>
+
+        <div class="model-card">
+            <h3>Mercedes GLE</h3>
+            <p>Luxury SUV with cutting-edge technology.</p>
+        </div>
+
+        <div class="model-card">
+            <h3>Mercedes GLC</h3>
+            <p>Compact luxury SUV with a sporty design.</p>
+        </div>
+    </section>
+
+    <section class="features-list">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Innovative safety technologies</li>
+            <li>Luxurious interior design</li>
+            <li>Powerful and efficient engines</li>
+            <li>Advanced infotainment systems</li>
+            <li>State-of-the-art driver assistance</li>
+            <li>Smooth and responsive handling</li>
+            <li>Exceptional build quality</li>
+        </ul>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to know more? Reach out to us!</p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Transitions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+    }
+
+    
+    .scale {
+      background-color: #FF6347; 
+    }
+
+    .scale:hover {
+      transform: scale(1.5);
+    }
+
+    /* Slide */
+    .slide {
+      background-color: #98FB98; /* PaleGreen */
+      transform: translateX(0);
+    }
+
+    .slide:hover {
+      transform: translateX(150px);
+    }
+
+    
+    .skew {
+      background-color: #7B68EE; 
+      transform: skew(20deg);
+    }
+
+    .skew:hover {
+      transform: skew(-20deg);
+    }
+
+    
+    .rotate {
+      background-color: #FFD700; 
+      transform: rotate(0deg);
+    }
+
+    .rotate:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="box scale">Scale</div>
+
+
+  <div class="box slide">Slide</div>
+
+  
+  <div class="box skew">Skew</div>
+
+  
+  <div class="box rotate">Rotate</div>
+
+</body>
+</html>

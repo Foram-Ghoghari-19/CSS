@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Values Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            margin: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .box.static {
+            position: static;
+            background-color: #87CEEB;
+        }
+
+
+        .box.relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: #3CB371;
+        }
+
+        .box.absolute {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #FF6347;
+        }
+
+
+        .box.fixed {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #9370DB;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="box static">Static</div>
+
+
+
+        <div class="box relative">Relative</div>
+
+
+        <div class="box absolute">Absolute</div>
+
+
+        <div class="box fixed">Fixed</div>
+
+    </div>
+
+</body>
+
+</html>
